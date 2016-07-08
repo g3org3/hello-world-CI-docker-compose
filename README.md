@@ -1,7 +1,6 @@
 # hello_world CI with docker and docker-compose
 
 # Usage
-
 ## Build and start hello_world
 ```sh
 $ docker-compose build
@@ -28,3 +27,7 @@ Tests passed!
 $ docker wait ci_sut_1
 > 0
 ```
+
+# Credits
+[digital ocean's ci tutorial](https://www.digitalocean.com/community/tutorials/how-to-configure-a-continuous-integration-testing-environment-with-docker-and-docker-compose-on-ubuntu-14-04)
+
