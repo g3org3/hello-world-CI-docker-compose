@@ -1,20 +1,30 @@
 # hello_world CI with docker and docker-compose
 
 # Usage
-get your hello_world up and running
 
+## Build and start hello_world
 ```sh
 $ docker-compose build
 $ docker-compose up -d
 ```
 
-run tests
+## Run tests
 ```sh
 $ docker-compose -f docker-compose.test.yml build
 $ docker-compose -f docker-compose.test.yml up -d
 ```
 
-see logs
+## See logs
 ```sh
 $ docker logs -f ci_sut_1
+> % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    42  100    42    0     0   3902      0 --:--:-- --:--:-- --:--:--  4200
+Tests passed!
+```
+
+## Check exit code
+```sh
+$ docker wait ci_sut_1
+> 0
 ```
